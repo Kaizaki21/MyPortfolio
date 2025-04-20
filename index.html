@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button id="darkModeToggle" aria-label="Toggle dark mode">Dark Mode</button>
+
+    <div class="container">
+        <header>
+            <h1 id="typed-name" aria-live="polite" aria-atomic="true"></h1>
+            <p id="typed-title" aria-live="polite" aria-atomic="true"></p>
+        </header>
+
+        <section id="about" tabindex="0">
+            <h2>About Me</h2>
+            <p>Hello! I’m a first-year MCA student at Assam Don Bosco University, with a BCA degree from Shillong College. I’m passionate about web development because it lets me solve problems creatively and build engaging, user-friendly experiences. I
+                enjoy learning new technologies and continuously improving my skills.</p>
+        </section>
+
+        <section id="skills" tabindex="0">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Principles</li>
+            </ul>
+        </section>
+
+        <section id="projects" tabindex="0">
+            <h2>Projects</h2>
+        </section>
+
+        <section id="contact" tabindex="0">
+            <h2>Contact Me</h2>
+            <form id="contactForm" novalidate>
+                <input type="email" id="email" name="email" placeholder="Your Email *" aria-required="true" required />
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone (optional)" />
+                <textarea id="message" name="message" rows="5" placeholder="Your Message *" aria-required="true" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="formFeedback" role="alert" aria-live="assertive"></p>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p id="dateTime" aria-live="polite" aria-atomic="true"></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
